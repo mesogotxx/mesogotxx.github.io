@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Predicción</title>
+</head>
+<body>
+    <h2>Predicción basada en características</h2>
+    <form action="/predict" method="post">
+        <label for="teamStartingEquipment">Valor del equipo inicial del equipo:</label><br>
+        <input type="number" id="teamStartingEquipment" name="teamStartingEquipment" required><br><br>
+
+        <label for="roundStartingEquipment">Valor del equipo inicial de la ronda:</label><br>
+        <input type="number" id="roundStartingEquipment" name="roundStartingEquipment" required><br><br>
+
+        <label for="roundId">ID de la ronda:</label><br>
+        <input type="text" id="roundId" name="roundId" required><br><br>
+
+        <label for="matchId">ID del partido:</label><br>
+        <input type="text" id="matchId" name="matchId" required><br><br>
+
+        <button type="submit">Predecir</button>
+    </form>
+</body>
+</html>
